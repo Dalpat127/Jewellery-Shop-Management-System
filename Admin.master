@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Customer" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body
+        {
+           background-image: url('/Jewellery Shop Management System/img/j2.jpg');
+           background-repeat:no-repeat;
+           background-size:cover;
+           background-position:center;
+           background-attachment:fixed;
+        } 
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            font-size: 40px;
+            color: #FF0000;
+        }
+        .style3
+        {
+            width: 145px;
+        }
+        .style4
+        {
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: small;
+            background-color: #000000;
+        }
+        .style5
+        {
+            font-size: xx-large;
+            color: #FF0000;
+            height: 16px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td class="style2" colspan="2" 
+                 
+                    <strong><strong>Jewellery Automation System</strong></strong><br />
+                </td>
+            </tr>
+            <tr>
+                <td class="style5" colspan="2" 
+                 
+                    <strong>
+                    <asp:Button ID="Button13" runat="server" Height="25px" 
+                        style="font-weight: 700; font-size: small; color: #FFFFFF; background-color: #000000" 
+                        Text="Log-out" Width="120px" onclick="Button13_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            </tr>
+            <tr>
+                <td class="style3" 
+                    style=" background-repeat: no-repeat; background-attachment: fixed">
+&nbsp;&nbsp;
+                    <asp:Button ID="Button1" runat="server" Height="25px" Text="Home" 
+                        Width="130px" onclick="Button1_Click" CssClass="style4" />
+                    .<br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button2" runat="server" BackColor="Black" ForeColor="White" 
+                        Height="25px" style="font-weight: 700; font-size: small" Text="Add Category" 
+                        Width="130px" onclick="Button2_Click2" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button3" runat="server" CssClass="style4" Height="25px" 
+                        Text="View Category" Width="130px" onclick="Button3_Click2" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button4" runat="server" CssClass="style4" Height="25px" 
+                        Text="Supplier" Width="130px" onclick="Button4_Click" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button5" runat="server" CssClass="style4" Height="25px" 
+                        Text="Search" Width="130px" onclick="Button5_Click" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button6" runat="server" CssClass="style4" Height="25px" 
+                        Text="Customer" Width="130px" onclick="Button6_Click" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button7" runat="server" CssClass="style4" Height="25px" 
+                        Text="All Customer" Width="130px" onclick="Button7_Click" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button8" runat="server" CssClass="style4" Height="25px" 
+                        Text="Purchase" Width="130px" onclick="Button8_Click" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button9" runat="server" CssClass="style4" Height="25px" 
+                        Text="All Product" Width="130px" onclick="Button9_Click" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button10" runat="server" CssClass="style4" Height="25px" 
+                        Text="Sell" Width="130px" onclick="Button10_Click" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button11" runat="server" CssClass="style4" Height="25px" 
+                        Text="Stock" Width="130px" onclick="Button11_Click" />
+                    <br />
+                    <br />
+&nbsp;&nbsp;
+                    <asp:Button ID="Button12" runat="server" CssClass="style4" Height="25px" 
+                        Text="View" Width="130px" onclick="Button12_Click1" />
+                    <br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button14" runat="server" Height="25px" 
+                        style="font-weight: 700; color: #FFFFFF; background-color: #000000" 
+                        Text="Request" Width="125px" onclick="Button14_Click" />
+                    <br />
+                </td>
+                <td>
+                   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>
